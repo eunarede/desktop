@@ -17,7 +17,7 @@ module.exports = function (grunt) {
     return match ? match[1] : null;
   };
 
-  var BASENAME = 'VPN.ht';
+  var BASENAME = 'Iternyx VPN';
   var APPNAME = BASENAME;
 
   if (alpha) {
@@ -33,7 +33,7 @@ module.exports = function (grunt) {
   var OSX_DIST_X64 = OSX_OUT + '/' + APPNAME + '-' + packagejson.version + '.pkg';
 
   grunt.initConfig({
-    IDENTITY: 'Developer ID Application: David Lemarier',
+    IDENTITY: 'Developer ID Application: EunaRede - The Hosting Company',
     APPNAME: APPNAME,
     APPNAME_ESCAPED: APPNAME.replace(/ /g, '\\ ').replace(/\(/g,'\\(').replace(/\)/g,'\\)'),
     OSX_OUT: OSX_OUT,
@@ -98,13 +98,13 @@ module.exports = function (grunt) {
           'file-version': packagejson.version,
           'product-version': packagejson.version,
           'version-string': {
-            'CompanyName': 'VPN.ht Limited',
+            'CompanyName': 'The Hosting Company',
             'ProductVersion': packagejson.version,
             'ProductName': APPNAME,
             'FileDescription': APPNAME,
             'InternalName': BASENAME + '.exe',
             'OriginalFilename': BASENAME + '.exe',
-            'LegalCopyright': 'Copyright 2015 VPN.ht Limited. All rights reserved.'
+            'LegalCopyright': 'Copyright 2016 The Hosting Company. Todos os Direitos Reservados.'
           }
         }
       }
@@ -114,7 +114,7 @@ module.exports = function (grunt) {
       config: {
         appDirectory: path.join(__dirname, 'dist/' + BASENAME + '-win32-ia32'),
         outputDirectory: path.join(__dirname, 'dist'),
-        authors: 'VPN.ht Limited',
+        authors: 'The Hosting Company',
         loadingGif: 'util/loading.gif',
         setupIcon: 'util/setup.ico',
         iconUrl: 'https://raw.githubusercontent.com/vpnht/desktop/master/util/vpnht.ico',
@@ -292,7 +292,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           dot: true,
-          cwd: './dist/VPN.ht-win32-ia32',
+          cwd: './dist/iternyxVPN-win32-ia32',
           src: '**/*'
         }]
 	    },

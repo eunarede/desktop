@@ -1,15 +1,15 @@
 {
-  "name": "VPN.ht",
+  "name": "Iternyx VPN",
   "version": "0.0.3",
-  "author": "VPN.ht",
-  "description": "Simple VPN.ht Client.",
-  "homepage": "https://vpn.ht/",
+  "author": "The Hosting Company",
+  "description": "Iternyx VPN Client.",
+  "homepage": "https://www.iternyx.com",
   "main": "browser.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:vpnht/desktop.git"
+    "url": "git@github.com:eunarede/desktop.git"
   },
-  "bugs": "https://github.com/vpnht/desktop/issues",
+  "bugs": "https://github.com/eunarede/desktop/issues",
   "scripts": {
     "start": "grunt",
     "release": "grunt release"
@@ -18,7 +18,7 @@
   "electron-version": "0.33.3",
   "dependencies": {
     "alt": "0.17.3",
-    "autoupdater": "vpnht/autoupdater",
+    "autoupdater": "eunarede/autoupdater",
     "bluebird": "2.10.1",
     "bugsnag-js": "2.4.7",
     "classnames": "2.1.3",
@@ -29,7 +29,7 @@
     "lodash": "3.10.1",
     "mixpanel": "kitematic/mixpanel-node",
     "node-cache": "3.0.0",
-    "node-openvpn": "VPNht/node-openvpn",
+    "node-openvpn": "eunarede/node-openvpn.git",
     "node-uuid": "1.4.3",
     "object-assign": "4.0.1",
     "osx-release": "1.1.0",
@@ -40,7 +40,7 @@
     "react-select": "0.6.11",
     "request": "2.55.0",
     "validator": "4.0.6",
-    "windows-service-manager": "vpnht/windows-service-manager",
+    "windows-service-manager": "eunarede/windows-service-manager",
     "winreg": "0.0.12",
     "xps": "^1.0.2",
     "yargs": "^3.27.0"
