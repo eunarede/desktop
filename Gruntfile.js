@@ -66,7 +66,7 @@ module.exports = function (grunt) {
           platform: 'darwin',
           arch: 'x64',
           asar: true,
-          'app-bundle-id': 'ht.vpn.desktop',
+          'app-bundle-id': 'iternyx.vpn.desktop',
           'app-version': packagejson.version
         }
       }

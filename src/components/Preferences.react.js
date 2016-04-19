@@ -15,7 +15,7 @@ var Preferences = React.createClass({
       connectLaunch: Settings.get('connectLaunch'),
       saveCredentials: Settings.get('saveCredentials'),
       autoPath: Settings.get('autoPath'),
-      disableSmartdns: Settings.get('disableSmartdns') ,
+      //disableSmartdns: Settings.get('disableSmartdns') ,
       encryption: Settings.get('encryption') || 128,
       customPort: Settings.get('customPort') || 'default',
       minToTaskbar: Settings.get('minToTaskbar')

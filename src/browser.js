@@ -68,7 +68,7 @@ app.on('ready', function() {
     });
 
     var preventMultipleInstances = function() {
-        var socket = (process.platform === 'win32') ? '\\\\.\\pipe\\vpnht-sock' : path.join(os.tmpdir(), 'vpnht.sock');
+        var socket = (process.platform === 'win32') ? '\\\\.\\pipe\\iternyxvpn-sock' : path.join(os.tmpdir(), 'iternyxvpn.sock');
         var client = net.connect({
             path: socket
         }, function() {
@@ -158,7 +158,7 @@ app.on('ready', function() {
 
     mainWindow.webContents.on('did-finish-load', function() {
 
-        mainWindow.setTitle('VPN.ht');
+        mainWindow.setTitle('Iternyx VPN');
         if (!args.hide) {
             mainWindow.show();
             mainWindow.focus();

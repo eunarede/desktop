@@ -11,10 +11,10 @@ var app = remote.require('app');
 var MenuTemplate = function () {
   return [
     {
-      label: 'VPN.ht',
+      label: 'Iternyx VPN',
       submenu: [
       {
-        label: 'About VPN.ht',
+        label: 'Sobre a Iternyx VPN',
         click: function () {
           metrics.track('Opened About', {
             from: 'menu'
@@ -26,24 +26,24 @@ var MenuTemplate = function () {
         type: 'separator'
       },
       {
-        label: 'Hide VPN.ht',
+        label: 'Minimizar Iternyx VPN',
         accelerator: util.CommandOrCtrl() + '+H',
         selector: 'hide:'
       },
       {
-        label: 'Hide Others',
+        label: 'Minimizar Outros',
         accelerator: util.CommandOrCtrl() + '+Shift+H',
         selector: 'hideOtherApplications:'
       },
       {
-        label: 'Show All',
+        label: 'Exibir Tudo',
         selector: 'unhideAllApplications:'
       },
       {
         type: 'separator'
       },
       {
-        label: 'Quit',
+        label: 'Sair',
         accelerator: util.CommandOrCtrl() + '+Q',
         click: function() {
           app.quit();
@@ -52,7 +52,7 @@ var MenuTemplate = function () {
       ]
     },
     {
-      label: 'View',
+      label: 'Ver',
       submenu: [
         {
           label: 'Toggle DevTools',

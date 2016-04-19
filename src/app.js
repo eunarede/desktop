@@ -64,7 +64,7 @@ ipc.on('application:vpn-connect', () => {
 
 ipc.on('application:vpn-check-disconnect', () => {
 	if (accountStore.getState().connecting || accountStore.getState().connected) {
-		log.info('Disconnecting before closing application');
+		log.info('Desconectando antes de encerrar o aplicativo');
 		vpnActions.disconnect();
 	} else {
 		vpnActions.disconnected();
@@ -73,7 +73,7 @@ ipc.on('application:vpn-check-disconnect', () => {
 
 ipc.on('application:vpn-check-sleep', () => {
 	if (accountStore.getState().connected) {
-		log.info('Trying to reconnect after sleep');
+		log.info('Tentando reconexão após a hibernação');
 		if (Credentials._config()) {
 			vpnActions.connect({
 				username: Credentials.get().username,
