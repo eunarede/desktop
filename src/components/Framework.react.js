@@ -43,7 +43,7 @@ var Client = React.createClass({
     metrics.track('Opened Issue Reporter', {
       from: 'app'
     });
-    shell.openExternal('https://github.com/vpnht/desktop/issues/new');
+    shell.openExternal('https://github.com/eunarede/desktop/issues/new');
   },
 
   handleMouseEnterReportIssue: function () {
@@ -86,7 +86,7 @@ var Client = React.createClass({
           <Router.RouteHandler />
         </div>
         <footer>
-            <RetinaImage className="footerimg" src="FooterIllustration.png"/>
+          //  <RetinaImage className="footerimg" src="FooterIllustration.png"/>
         </footer>
       </div>
     );

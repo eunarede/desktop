@@ -95,7 +95,7 @@ module.exports = {
     },
     enableStartOnBoot: function(hidden) {
         return new Promise((resolve) => {
-            regKey.set('iternyxVPN', Winreg.REG_SZ, "\"" + require('remote').require('app').getPath('exe') + (hidden ? ' --hide' : '') + "\"", function() {
+            regKey.set('iternyxvpn', Winreg.REG_SZ, "\"" + require('remote').require('app').getPath('exe') + (hidden ? ' --hide' : '') + "\"", function() {
                 resolve();
             });
         });
@@ -103,7 +103,7 @@ module.exports = {
 
     disableStartOnBoot: function() {
         return new Promise((resolve) => {
-            regKey.remove('iternyxVPN', function() {
+            regKey.remove('iternyxvpn', function() {
                 resolve();
             });
         });
@@ -111,7 +111,7 @@ module.exports = {
 
     statusStartOnBoot: function() {
         return new Promise((resolve) => {
-            regKey.get('iternyxVPN', function(error, item) {
+            regKey.get('iternyxvpn', function(error, item) {
                 resolve(item != null);
             });
         });

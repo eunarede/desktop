@@ -17,7 +17,7 @@ module.exports = function (grunt) {
     return match ? match[1] : null;
   };
 
-  var BASENAME = 'Iternyx VPN';
+  var BASENAME = 'iternyxvpn';
   var APPNAME = BASENAME;
 
   if (alpha) {
@@ -117,7 +117,7 @@ module.exports = function (grunt) {
         authors: 'The Hosting Company',
         loadingGif: 'util/loading.gif',
         setupIcon: 'util/setup.ico',
-        iconUrl: 'https://raw.githubusercontent.com/vpnht/desktop/master/util/vpnht.ico',
+        iconUrl: 'https://assets.itern.xyz/icons/iternyx.ico',
         description: APPNAME,
         title: APPNAME,
         exe: BASENAME + '.exe',

@@ -48,7 +48,7 @@ var SubHeader = React.createClass({
     return (
         <header>
             <RetinaImage className="logo" src="Logo.png"/>
-            <RetinaImage className={greenGuyClass} src="Figure.png"/>
+            //<RetinaImage className={greenGuyClass} src="Figure.png"/>
             {status}
         </header>
     );

@@ -94,7 +94,7 @@ var MenuTemplate = function () {
             metrics.track('Opened Issue Reporter', {
               from: 'menu'
             });
-            shell.openExternal('https://github.com/vpnht/desktop/issues/new');
+            shell.openExternal('https://github.com/eunarede/desktop/issues/new');
           }
         }
       ]
